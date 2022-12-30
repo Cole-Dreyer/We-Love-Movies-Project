@@ -6,8 +6,8 @@ require("dotenv").config();
 // create variable to hold the NODE_ENV status.
 const {
   NODE_ENV = "development",
-  DEVELOPMENT_DATABASE_URL,
-  PRODUCTION_DATABASE_URL,
+  DEVELOPMENT_DATABASE_URL = "postgres://skaykxav:5x6RWn0vHkF3GYZ-JQ4i60HXOtkPxaO9@berry.db.elephantsql.com/skaykxav",
+  PRODUCTION_DATABASE_URL = "postgres://skaykxav:5x6RWn0vHkF3GYZ-JQ4i60HXOtkPxaO9@berry.db.elephantsql.com/skaykxav",
 } = process.env;
 
 // create variable to hold URL depending on if migration is run
